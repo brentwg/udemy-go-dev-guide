@@ -20,7 +20,7 @@ func main() {
 		10}
 
 	// iterate through the slice, check to see if a number is even/odd
-	for number := range myNumbers {
+	for _, number := range myNumbers {
 		if number%2 == 0 {
 			fmt.Println(number, " is even")
 		} else {
